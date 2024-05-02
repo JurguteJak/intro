@@ -96,14 +96,12 @@ console.clear();
 console.log(!true);
 console.log(!false);
 console.log(!!false);
-// sauktukas apsuka logine reiksme
 // daugiau nei 2 sauktukai nerasyti
 console.log(!!!false);
-console.log(!!!!false);
+console.log(!!!false);
 
 //ND
 console.log(true && true && true && true);
 console.log(true && true && true && false);
-
-console.log(true && true && true || true);
-console.log(true && true && true || false);
+console.log(true && true && false && false);
+console.log(true && true && false && false);
