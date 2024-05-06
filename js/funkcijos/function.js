@@ -86,3 +86,31 @@ function iLike(name, age, item) {
 console.log(iLike('Jonas'));
 console.log(iLike('Maryte', 88));
 console.log(iLike('Ona', 66, 'balionus'));
+
+
+function price(value){
+    const PVM = 21; // 0.21
+    const priceIncrease = 1 + PVM / 100
+    const priceForSale = value * priceIncrease;
+
+    return priceForSale;
+}
+
+console.log(price(100)); // 121
+console.log(price(150)); // 121
+
+console.clear();
+
+// Dictionary: zodis, zodis, zodis,
+function words(w1, w2, w3,) {
+    let sentence = 'Dictionary: ';
+    sentence += w1;
+    sentence += ', ';
+    sentence += w2;
+    sentence += ', ';
+    sentence += w3;
+    sentence += '. ';
+
+    return sentence;
+}
+console.log(words('labas', 'rytas', 'Lietuva'));
