@@ -39,17 +39,18 @@ console.clear();
 
 //10, 2, 8, 4, 6
 let sum3 = 0;
-sum3 = sum3 + marks[0];
-sum3 = sum3 + marks[1];
-sum3 = sum3 + marks[2];
-sum3 = sum3 + marks[3];
-sum3 = sum3 + marks[4];
+let index = 0;
+
+//index = 0 -> 1
+sum3 += marks[index++];
+sum3 += marks[index++];
+sum3 += marks[index++];
+sum3 += marks[index++];
+sum3 += marks[index++];;
 
 console.log(sum3);
 
 console.log(marks[52222]);
 
 //? = 30 + undefined = NaN
-sum3 = sum3 + marks[5];
 
-console.log(sum3);
