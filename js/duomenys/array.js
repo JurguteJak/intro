@@ -54,3 +54,33 @@ console.log(marks[52222]);
 
 //? = 30 + undefined = NaN
 
+console.clear();
+
+function marksAverage(marks) {
+    if (marks.length === 0) {
+        return 'Vidurkis: nera pazymiu.'; 
+    }
+
+    let sum = 0;
+
+    // yra bent 1 pazymys
+    
+
+
+     return 'Vidurkis: ' + (sum / marks.length);
+}
+
+const jonoPazymiai = [];
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(10);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(2);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));
+
+jonoPazymiai.push(8);
+console.log(jonoPazymiai);
+console.log(marksAverage(jonoPazymiai));

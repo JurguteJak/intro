@@ -13,6 +13,7 @@ const a = funkcijosPavadinimas();
 
 console.log(a);
 
+//PVZ standartinis pradzios 
 function empty() {
     return undefined;
 }
@@ -43,7 +44,7 @@ Laba diena, as esu Petras Petraitis!
 Laba diena, as esu Ona Onaityte!
 */
 
-function intro (name, surname) {
+function intro(name, surname) {
     return 'Laba diena, as esu ' + name + ' ' + surname + '!';
     return 'Laba diena, as esu VARDAS PAVARDE!';
 }
@@ -88,7 +89,7 @@ console.log(iLike('Maryte', 88));
 console.log(iLike('Ona', 66, 'balionus'));
 
 
-function price(value){
+function price(value) {
     const PVM = 21; // 0.21
     const priceIncrease = 1 + PVM / 100
     const priceForSale = value * priceIncrease;
