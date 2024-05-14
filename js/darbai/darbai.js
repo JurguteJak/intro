@@ -322,3 +322,28 @@ console.log(numberCount(8, 31, 7));
 console.log(numberCount(-18, 18, 3));
 console.log(numberCount(-18, 18, 5));
 console.log(numberCount(-18, 18, 7));
+
+console.clear();
+
+//FUNKCIJA
+
+function didziausiasSkaiciusSarase(count) {
+    if (typeof count !== 'number') {
+        return 'Pateikta netinkamo tipo reikšmė.';
+        // } else if (typeof count == 'number') {
+        //     console.log(didziausiasSkaiciusSarase(152));
+
+        // }
+    }
+
+    console.log(didziausiasSkaiciusSarase());
+
+// console.log(didziausiasSkaiciusSarase([]));
+
+// console.log(didziausiasSkaiciusSarase(5125));
+// console.log(didziausiasSkaiciusSarase(781));
+// console.log(didziausiasSkaiciusSarase(370601234565));
+// console.log(didziausiasSkaiciusSarase(true));
+// console.log(didziausiasSkaiciusSarase("asd"));
+// console.log(didziausiasSkaiciusSarase(NaN));
+

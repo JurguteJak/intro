@@ -50,7 +50,7 @@ console.log(2 ** 3, 2 * 2 * 2);
 console.log(2 ** 4, 2 * 2 * 2 * 2);
 
 const liekana1 = pirmas % antras;
-console.log(pirmas,'%', antras, '=', liekana1);
+console.log(pirmas, '%', antras, '=', liekana1);
 
 const liekana2 = antras % pirmas;
 console.log(antras, '%', pirmas, '=', liekana2);
@@ -81,15 +81,15 @@ money = 5;
 console.log(money);
 
 //?? = 5+1
-money = money +1;
+money = money + 1;
 console.log(money);
 
 //?? = 6+2
-money = money +2;
+money = money + 2;
 console.log(money);
 
 //?? = 8+3
-money = money +3;
+money = money + 3;
 console.log(money);
 
 let greitukas = 13;
@@ -98,7 +98,7 @@ console.log(greitukas);
 greitukas = greitukas + 3;
 console.log(greitukas);
 
-greitukas = 2* greitukas - 1;
+greitukas = 2 * greitukas - 1;
 console.log(greitukas);
 
 greitukas = greitukas % 10;
@@ -109,10 +109,10 @@ console.log(greitukas);
 
 greitukas = 69;
 console.log(greitukas);
- 
+
 console.clear();
 
-let x= 1;
+let x = 1;
 
 x += 1;
 console.log(x);
@@ -155,7 +155,7 @@ console.log(makaronai);
 makaronai += 1;
 console.log(makaronai);
 
-makaronai ++;
+makaronai++;
 console.log(makaronai);
 
 ++makaronai;

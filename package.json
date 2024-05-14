@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "method:number": "node --watch ./js/metodai/number.js",
+    "mokaus": "node --watch ./js/darbai/mokaus.js",
+    "numberSize": "node --watch ./js/darbai/numberSize.js",
+    "typeof": "node --watch ./js/duomenys/typeof.js",
+    "multiply": "node --watch ./js/darbai/multiply.js",
     "for": "node --watch ./js/ciklai/for.js",
     "darbai": "node --watch ./js/darbai/darbai.js",
     "array": "node --watch ./js/duomenys/array.js",
