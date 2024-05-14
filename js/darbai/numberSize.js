@@ -67,3 +67,5 @@ console.log(numberSize(numberSize));
 // console.log('' + []);
 // console.log('' + [1, 2, 3]);
 // console.log('' + numberSize);
+
+console.log('------');
