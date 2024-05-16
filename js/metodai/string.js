@@ -88,5 +88,66 @@ console.log(p.slice(p.length - 3));
 const dalis = 'Pyragelis'.slice(2, 100);
 console.log(dalis, dalis.length);          //bus 7
 
+console.clear();
 console.log('----------');
 console.log('split()');
+
+const sakinys = 'Labas rytas, Lietuva!';  //kadangi zodziu grandinele, tai norint juos atskirti, kerpam per tarpa '  ' ir gauni masyva su zodziais
+const zodziai = sakinys.split(' ');
+console.log(zodziai);
+console.log(zodziai[0]);
+console.log(zodziai[1]);
+console.log(zodziai[2]);
+
+const sakinys2 = 'bananas';           //kerpa pries kiekviena a ir po jos
+const dalys = sakinys2.split('a');
+console.log(dalys);
+
+const sakinys3 = 'Pomidoras';         // kerpant visada gaunasi dvi dalys, pvz. pries 's' ir uz 's' (tuscias tekstas)
+const dalys1 = sakinys3.split('s');
+console.log(dalys1);
+
+const sakinys4 = 'aaWaaWaawaaWaa';    //jei nurodai W tai nekreipia demesio i w mazaja
+const daly2 = sakinys4.split('W');
+console.log(daly2);
+
+const sakinys5 = 'aawawawawawaa';    //jei nurodai W tai nekreipia demesio i w mazaja
+const daly3 = sakinys5.split('a');
+console.log(daly3);
+
+const sakinys6 = 'Pomidora';         // kai nera kur kirpti, tai grazina pirmine reiksme
+const dalys4 = sakinys6.split('x');
+console.log(dalys4);
+
+const sakinys7 = 'Pomidoris';         // kai nenurodai kur kirpti, karpo po raide (pries ir po ne)
+const dalys5 = sakinys7.split('');
+console.log(dalys5);
+
+//sakinys => tuscias / ne tuscias
+// split => tuscias / ne tuscias
+// split => (ne) buvo kur kirpti
+
+console.log('----------');
+console.log('toLowerCase() toUpperCase()');
+console.log('Pomidoras'.toLowerCase());           //visas raides i mazases padaro
+console.log('Pomidoras'.toUpperCase());           //visas raides i didziasias padaro
+
+console.log('----------');
+console.log('trim ()');
+console.log('"' + 'Pomidoras'.trim() + '"');             //nieko nedaro kol nera tarpu
+console.log('"' + 'Pomidoras     '.trim() + '"');        //pasalina tarpus esancius gale 
+console.log('"' + '    Storas   pomidoras     '.trim() + '"');    //pasalina tarpus esancius gale ir priekyje, bet ne per viduri
+
+//console.log(''.trimEnd());
+//console.log(''.trimStart());
+
+// Kaip pasalinti sinbolius:
+// const text = 'Labas rytas, Lietuva!';
+// const dictionary = ['Labas', 'rytas', 'Lietuva'];
+// const dictionary = text.replace(',', '').replace('!', '').split(' ');
+// console.log(dictionary);
+
+//Kai norim pasalinti visus simbolius:
+const text = 'Labas rytas, Lietuva!, Kaip tu, mieloji, ten laikais?'
+const dictionary = text.replaceAll(',', '').replaceAll('!', '').replaceAll('?', '').split(' ');
+console.log(dictionary);

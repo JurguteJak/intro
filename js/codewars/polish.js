@@ -47,7 +47,7 @@ function polish(string) {
     let result = '';
 
     for (let i = 0; i < string.length; i++) {
-        const letter = string[i];
+        const letter = string[i];                        //letter-gauto teksto raides
 
         let index = -1;
         for (let j = 0; j < polishAbc.length; j++) {

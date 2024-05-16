@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "matrix": "node --watch ./js/darbai/matrix.js",
+    "clock": "node --watch ./js/darbai/clock.js",
     "method:string": "node --watch ./js/metodai/string.js",
     "codewars:polish": "node --watch ./js/codewars/polish.js",
     "method:number": "node --watch ./js/metodai/number.js",
