@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "object": "node --watch ./js/duomenys/object.js",
+    "method:random": "node --watch ./js/metodai/random.js",
     "mano": "node --watch ./js/darbai/mano.js",
     "method:math": "node --watch ./js/metodai/math.js",
     "ternary": "node --watch ./js/palyginimai/ternary.js",

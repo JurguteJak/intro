@@ -96,9 +96,17 @@ console.log(Math.min(-1, -3, 7, 10, 3.14));
 console.log('\n Pow------------');          // pakelta laipsniu
 console.log(Math.pow(2, 3));  // tas pats kaip console.log(Math.pow(2 ** 3));\
 
-console.log('\n Random------------')
+console.log('\n Random------------')                //Naudojamas tik kai turim daugiau reiksmiu
 console.log('Intervale  nuo 0 iki 1 --> [0..1]');   // didziausias skaicius bus 0.99999999, bet ne 1
 console.log(Math.random());
 console.log(Math.random());
 console.log(Math.random());
+
+console.log('\n Sing------------');
+console.log(Math.sign(5));
+console.log(Math.sign(-5));
+console.log(Math.sign(0));
+console.log(Math.sign(-0));
+console.log(Math.sign(Infinity));             //
+console.log(Math.sign(-Infinity));
 
