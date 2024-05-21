@@ -22,7 +22,7 @@ console.log(kabutes1);
 const kabutes2 = 'Dviguba (") kabute.';
 console.log(kabutes2);
 
-const personName = 'Chuck';
+const personName = 'Chuck';                       // du tekstai sujnungti pagamina istisa teksta, todel reikia tarpo
 const personSurname = 'Noris';
 const fullname = personName + ' ' + personSurname;
 console.log(fullname);
@@ -75,7 +75,7 @@ const money3 = turinys3 + ' ' + pinigai3 + ';';
 console.log(money3);
 
 
-console.clear ();
+console.clear();
 
 const txt1 = "Pinigines turinys:";
 const txt2 = "Pinigine papildyta:";
@@ -88,3 +88,4 @@ console.log(txt1, x, ";");
 x += 90;
 console.log(txt2, x - 10, ";");
 console.log(txt1, x, ";");
+

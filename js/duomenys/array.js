@@ -42,8 +42,8 @@ let sum3 = 0;
 let index = 0;
 
 //index = 0 -> 1
-sum3 += marks[index++];
-sum3 += marks[index++];
+sum3 += marks[index++];    //istraukia pirma pozicija ty 10 kitaip sakant masyve esanti skaiciu
+sum3 += marks[index++];    //istraukia pirma pozicija ty 2
 sum3 += marks[index++];
 sum3 += marks[index++];
 sum3 += marks[index++];;
@@ -58,16 +58,16 @@ console.clear();
 
 function marksAverage(marks) {
     if (marks.length === 0) {
-        return 'Vidurkis: nera pazymiu.'; 
+        return 'Vidurkis: nera pazymiu.';
     }
 
     let sum = 0;
 
     // yra bent 1 pazymys
-    
 
 
-     return 'Vidurkis: ' + (sum / marks.length);
+
+    return 'Vidurkis: ' + (sum / marks.length);
 }
 
 const jonoPazymiai = [];

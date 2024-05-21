@@ -7,7 +7,7 @@ NUMBERS
 "Ne normalus":
     - Infinity
     - -Infinity
-    -NaN (not-a-number)
+    - NaN (not-a-number)
 
 Matematiniai operatoriai:
 - aritmetiniai: +, -, /, *, **, %, ++, --
@@ -39,17 +39,17 @@ console.log(dalmuo2);
 const sandauga = pirmas * antras;
 console.log(sandauga);
 
-const laipsnis1 = pirmas ** antras;
+const laipsnis1 = pirmas ** antras;     //kelis laipsniu
 console.log(laipsnis1);
 
 const laipsnis2 = antras ** pirmas;
 console.log(laipsnis2);
 
-console.log(2 ** 2, 2 * 2);
+console.log(2 ** 2, 2 * 2);            //gali buti daugiau reiksmiu atskirtu kableliu
 console.log(2 ** 3, 2 * 2 * 2);
 console.log(2 ** 4, 2 * 2 * 2 * 2);
 
-const liekana1 = pirmas % antras;
+const liekana1 = pirmas % antras;                   // % liekana
 console.log(pirmas, '%', antras, '=', liekana1);
 
 const liekana2 = antras % pirmas;
@@ -67,7 +67,7 @@ console.log(pinigine);
 console.log(pinigine);
 console.log(pinigine);
 
-pinigine = 50;
+pinigine = 50;                 //prisimena paskutine pateikta reiksme
 console.log(pinigine);
 console.log(pinigine);
 console.log(pinigine);
@@ -80,15 +80,15 @@ console.log(money);
 money = 5;
 console.log(money);
 
-//?? = 5+1
+// 5+1  pinigines papildymas +1                           
 money = money + 1;
 console.log(money);
 
-//?? = 6+2
+//6+2  paskutine reiksme t.y 6 papildoma + 2 
 money = money + 2;
 console.log(money);
 
-//?? = 8+3
+// = 8+3 ir tt
 money = money + 3;
 console.log(money);
 
@@ -98,7 +98,7 @@ console.log(greitukas);
 greitukas = greitukas + 3;
 console.log(greitukas);
 
-greitukas = 2 * greitukas - 1;
+greitukas = 2 * greitukas - 1;     // galima ir kitus veiksmus daryti
 console.log(greitukas);
 
 greitukas = greitukas % 10;
@@ -114,7 +114,7 @@ console.clear();
 
 let x = 1;
 
-x += 1;
+x += 1;                         //sutrumpinimas x = x + 1
 console.log(x);
 
 x *= 20;
@@ -134,13 +134,13 @@ console.clear();
 let y = 10;
 console.log(y);
 
-y += 10 + 10 + 10;
+y += 10 + 10 + 10;                //40
 console.log(y);
 
-y -= 5 * 4;
+y -= 5 * 4;                   // 40-20=20
 console.log(y);
 
-y -= 10 + 5 * 4;
+y -= 10 + 5 * 4;             // 20- 30 (nes suskaiciuoja pirma viska kas desineje)
 console.log(y);
 
 let makaronai = 2;
@@ -172,6 +172,7 @@ console.log(g);
 console.log(g++);
 // pirmiau padidina, po to spausdina
 console.log(++g);
+
 console.log(g);
 
 let t = 9;

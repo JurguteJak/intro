@@ -58,18 +58,19 @@ console.log('..........');
 const colors = ['white', 'black', 'red', 'green', 'blue', 'violet'];
 
 console.log('..........');
-
+//ciklas sukasi i prieki
 for (let i = 0; i < colors.length; i++) {
     console.log(i, colors[i]);
 }
 
 console.log('..........');
 
+//ciklas sukasi atgal
 for (let i = colors.length - 1; i >= 0; i--) {
     console.log(i, colors[i]);
 
 }
-
+//ciklas didejimo tvarka, o reiksmes mazejimo
 for (let i = 0; i < colors.length; i++) {
     console.log(i, colors[colors.length - 1 - i]);
 }
@@ -90,6 +91,7 @@ console.log(sum / marks.length);
 
 console.log('.....')
 
+//vidurkiu apskaiciavimas
 const jonas = [];
 const maryte = [10, 2];
 const petras = [9, 8, 7];

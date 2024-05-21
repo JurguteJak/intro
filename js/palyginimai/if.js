@@ -45,21 +45,21 @@ console.clear();
 // blue -> melyna
 // green -> zalia
 // other -> Nezinau tokios spalvos...
-const color = 'white';
+const color = 'white';                  //negeras pvz
 
-if(color === 'red') {
+if (color === 'red') {
     console.log('Raudona');
-} 
+}
 
-if(color === 'blue') {
+if (color === 'blue') {
     console.log('Melyna');
 } else {
     console.log('Nezinau tokios spalvos...');
 }
 
-if(color === 'green') {
+if (color === 'green') {
     console.log('Zalia');
-} 
+}
 
 console.clear();
 
@@ -74,7 +74,7 @@ const color8 = 'yellow';
 
 let translation = '';
 
-if(color3 === 'red') {
+if (color3 === 'red') {
     translation = 'Raudona';
 } else if (color3 === 'blue') {
     translation = 'Melyna';
@@ -87,10 +87,10 @@ if(color3 === 'red') {
 console.log('>>>', translation);
 
 //Trumpinys norint gauti visu spavu rezultata
-function colorTranslation (color) {
+function colorTranslation(color) {
     let translation = '';
 
-    if(color === 'red') {
+    if (color === 'red') {
         translation = 'Raudona';
     } else if (color === 'blue') {
         translation = 'Melyna';

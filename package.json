@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "mano": "node --watch ./js/darbai/mano.js",
+    "method:math": "node --watch ./js/metodai/math.js",
+    "ternary": "node --watch ./js/palyginimai/ternary.js",
+    "arrow": "node --watch ./js/funkcijos/arrow.js",
     "matrix": "node --watch ./js/darbai/matrix.js",
     "clock": "node --watch ./js/darbai/clock.js",
     "method:string": "node --watch ./js/metodai/string.js",

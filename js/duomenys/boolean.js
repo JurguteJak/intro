@@ -75,10 +75,10 @@ isRich = true;
 
 console.log('-----------')
 
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
+console.log(true && true);            //true
+console.log(true && false);           //false
+console.log(false && true);           //false
+console.log(false && false);          //false
 
 console.log(true || true);
 console.log(true || false);
@@ -311,9 +311,14 @@ console.clear();
 const bbb = 4 + 2;
 
 if (bbb === 7) {
-    console.log(true);
+  console.log(true);
 } else {
-    console.log(false);
+  console.log(false);
 }
 
 // gali buti tik if (bbb) { }, o tada ziuret kaipinterpretuojami kiti duomenu tipai ir ju reiksmes, jei jos yra naudojamos lyg boolean'ai?
+
+
+if () {
+  console.log('Taip')
+}

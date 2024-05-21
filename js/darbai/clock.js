@@ -76,3 +76,20 @@ for (let val = 15; val <= 17; val++) {
 //         }
 //     }
 // }
+
+console.clear();
+// let h = 0;
+// let m = 0;
+// let s = 0;
+
+function past(h, m, s) {
+
+    for (let h = 0; h < 1; h++) {
+        for (let m = 0; m < 60; m++) {
+            for (let s = 0; s < 60; s++) {
+
+                console.log(h + ':' + m + ':' + s);
+            }
+        }
+    }
+}
