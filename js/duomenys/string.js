@@ -1,7 +1,7 @@
 /*
 STRING - tekstas, tekstiniu simboliu grandinele
 
-iniciavimas: ' (vienguba), " (dviguba)
+iniciavimas: ' (vienguba), " (dviguba), ` (backtick)
 
 */
 
@@ -89,3 +89,74 @@ x += 90;
 console.log(txt2, x - 10, ";");
 console.log(txt1, x, ";");
 
+// \r -return
+// \n - new line
+// \t - tab
+const HTML = '\
+<header>\r\n\
+\t<img>\r\n\
+\t<nav>\r\n\
+\t\t<a></a>\r\n\
+\t\t<a></a>\r\n\
+\t\t<a></a>\r\n\
+\t\t<nav>\r\n\
+</header>';
+
+console.log(HTML);
+
+const backtick = `Labas rytas, Lietuva!`;
+console.log(backtick);
+
+const backtick1 = `Backtikine (\`) kabute.`;
+const backtick2 = "Backtikine (`) kabute.";
+const backtick3 = 'Backtikine (`) kabute.';
+
+// tekstas per kelias eilutes su `` puikiai veikia
+const HTML2 = `<header>             
+    <img>
+    <nav>
+        <a></a>
+        <a></a>
+        <a></a>
+    <nav>
+</header>`;
+
+console.log(HTML2);
+
+const a = 7;
+const b = 5;
+const c = a + b;
+
+// 1 paprastas variantas
+const ats1 = a + ' + ' + b + ' = ' + c;
+console.log(ats1);
+
+// 2 variantas parašyti su backtick
+const ats2 = `${a} + ${b} = ${c}`;    //variantas
+console.log(ats2);
+
+// 1 variantas uzrasymo
+const start = 0;
+const finish = 11;
+const step = 3;
+const answer = 4;
+
+const mini1 = 'Skaičių intervale tarp ' + start + ' ir '
+    + finish + ', besidalijančių be liekanos iš ' + step +
+    'yra ' + answer + ' vienetai.';
+
+
+console.log(mini1);
+
+//  2 variantas sudetingiasniam/ilgiasniam tekstui, kai naudoji ` ir $
+const mini2 = `Skaičių intervale tarp ${start} ir ${finish}, 
+besidalijančių be liekanos iš ${step} yra ${answer} vienetai.`;
+console.log(mini2);
+
+console.log(mini1.length);        // ilgi ismatuoja
+console.log(mini1[0]);             // simboli kai norime gauti
+
+
+console.log('' + true);
+// arba variantas
+console.log(true.toString);

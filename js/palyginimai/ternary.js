@@ -14,7 +14,7 @@ if (4 < 2) {
 console.log(a);
 
 // sutrumpintas variantas if else
-//      klaus   jei tenkina : jei netenkina salygos
+//      klausim   jei tenkina : jei netenkina salygos
 const b = 4 > 2 ? 888 : 666;
 console.log(b);
 
@@ -33,16 +33,16 @@ console.log(f);
 const g = 'pomidoras'[1 < 2 ? 0 : 5];  //istraukia pirma raide p
 console.log(g);
 
-const gg = 'pomidoras'[2 + (1 < 2 ? 0 : 5)];  //
+const gg = 'pomidoras'[2 + (1 < 2 ? 0 : 5)];  //istraukia a, 8 raide(index 7)
 console.log(gg);
 
-// gali buti uzrasyta taip
+// gali buti uzrasyta taip, kai pirma nurodai is kur istraukti ir tada 2-oj eilutej trauki
 const gggIndex = 2 + (1 < 2 ? 0 : 5);
 const ggg = 'pomidoras'[gggIndex];
 console.log(ggg);
 
-//jei skaicius teigiamas, tai ji sumuojame su savimi
-//jei skaicius neigiamas, tai is jo atimame 10
+//salygas: jei skaicius teigiamas, tai ji sumuojame su savimi
+//salyga: jei skaicius neigiamas, tai is jo atimame 10
 
 const sum = (a, b) => a + b;
 const diff = (a, b) => a - b;
@@ -52,7 +52,7 @@ const diff = (a, b) => a - b;
 // console.log(ats);
 
 const n = 7;
-let ats = null;
+let ats = null;               //null tai nera reiksmes, bet ja duosime kai apskaiciuosime
 
 if (n > 0) {
     ats = sum(n, n);

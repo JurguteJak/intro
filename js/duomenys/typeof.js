@@ -43,26 +43,11 @@ if (tikrinimasDalykas === null) {
     console.log('ne');
 }
 
-console.clear();
+// console.clear();
 
 //pirma tikrinti ar tai object, tada ar null, taad array, jei ne tada jis objektas
 
-//Typeof naudojimas. turiu skaiciu
-//const a = true;
-//const aType = typeof a;
-
-//console.log(a);
-//console.log(aType);
-
-//if (aType === 'string') {
-//    console.log('As dirbu su STRING');
-//} else {
-//   console.log('As dirbu ne su STRING', aType);
-//}
-
-console.log('---------------')
-
-//arba
+//Typeof naudojimas. 
 
 const a = 1111;
 console.log(a);
@@ -79,24 +64,23 @@ if (typeof a !== 'string') {
     console.log('As dirbu su STRING:');
 }
 // LOGIKA
-//const x = 'FFGHJH';
-//const y = 7;
+const x = 'FFGHJH';
+const y = 7;
 
+// if (typeof x !== 'number') {
+//     console.log('ERROR: x');
+// } else if (typeof y !== 'number') {
+//     console.log('ERROR: y');
+// } else {
+//     console.log('VISKAS OK');
+// }
+
+//nustatineji tik vieno kintamojo tipa, ne taip, nes bus sunku paaiskinti kodel rezultatas toks
 //if (typeof (x && y) !== 'number') {
 //   console.log();
 //} else {
 //   console.log('OK');
 //}
-
-//if (typeof x !== 'number') {
-//    console.log('ERROR: x');
-//} else if (typeof y !== 'number') {
-//    console.log('ERROR: y');
-//} else {
-//    console.log('VISKAS OK');
-//}
-
-//nustatineji tik vieno kintamojo tipa, ne kaip prie LOGIKOS
 
 //PVZ kaip rasyti su struktura
 let hh = 7;

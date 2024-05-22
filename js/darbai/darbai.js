@@ -308,7 +308,8 @@ function numberCount(start, finish, step) {
         }
     }
 
-    return 'Skaičių intervale tarp ' + start + ' ir ' + finish + ', besidalijančių be liekanos iš ' + step + ' yra ' + answer + ' vienetai.';
+    return 'Skaičių intervale tarp ' + start + ' ir ' + finish + ', besidalijančių be liekanos iš ' +
+        step + ' yra ' + answer + ' vienetai.';
 }
 
 console.log(numberCount(0, 11, 3));
@@ -347,3 +348,10 @@ function didziausiasSkaiciusSarase(count) {
 // console.log(didziausiasSkaiciusSarase("asd"));
 // console.log(didziausiasSkaiciusSarase(NaN));
 
+// function reverseArrayOfNumbers(list) {
+//     for (let i = list.length - 1; i >= 0; i--) {
+
+//     }
+// }
+
+// reverseArrayOfNumbers([1, 2, 3, 4, 5]);

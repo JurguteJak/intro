@@ -9,7 +9,8 @@ Boolean ligikos operatoriai:
 - || (or)
  - ! (not)
 
- kaip interpretuojami kiti duomenu tipai ir ju reiksmes, jei jos yra naudojamos lyg boolean'ai?
+ kaip interpretuojami kiti duomenu tipai ir ju reiksmes, 
+ jei jos yra naudojamos lyg boolean'ai?
 
  Stringai:
  - jei tuscias - false
@@ -307,7 +308,7 @@ console.log(false || false || false || false);
 
 console.clear();
 
-//tikrinimo pvz
+//tikrinimo pvz.
 const bbb = 4 + 2;
 
 if (bbb === 7) {
@@ -315,10 +316,7 @@ if (bbb === 7) {
 } else {
   console.log(false);
 }
+//tikrinimo logika tokia, kad tikrina bbb === 7 gauna 6 tai reiskia false, todel tenkina antra salyga false
+// pateiktas reiksmes pavercia i boolean VISADA
 
-// gali buti tik if (bbb) { }, o tada ziuret kaipinterpretuojami kiti duomenu tipai ir ju reiksmes, jei jos yra naudojamos lyg boolean'ai?
 
-
-if () {
-  console.log('Taip')
-}
