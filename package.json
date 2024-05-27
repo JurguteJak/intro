@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "code": "node --watch ./js/darbai/code.js",
+    "method:array": "node --watch ./js/metodai/array.js",
+    "method:des": "node --watch ./js/metodai/des.js",
     "method:spread": "node --watch ./js/metodai/spread.js",
     "object": "node --watch ./js/duomenys/object.js",
+    "eval": "node --watch ./js/darbai/eval.js",
     "method:random": "node --watch ./js/metodai/random.js",
     "mano": "node --watch ./js/darbai/mano.js",
     "method:math": "node --watch ./js/metodai/math.js",

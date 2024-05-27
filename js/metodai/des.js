@@ -1,0 +1,45 @@
+/*
+Destrukturizavimas 
+... rest operatorius
+*/
+const a = [10, 2, 8, 4, 6];
+const first = a[0];
+const second = a[1];
+const rest = a.slice(2);
+
+console.log(first);
+console.log(second);
+console.log(rest);             // likusios reiksmes, nes paemem pirma 2 reiksmes
+
+const dict = ['labas', 'rytas', 'Lietuva', 'sakau', 'tau']; //struktura
+const [word1, word2, ...restOfDict] = dict;                                       // destrukturizavimas. imama is eiles 1 2 3
+
+
+console.log(word1);                     // individualu istraukia
+console.log(word2);                     // individualu istraukia
+console.log(restOfDict);                //surenka likusius
+
+function giveMeTwoNumbers() {
+    const a = Math.floor(Math.random() * 10);
+    const b = Math.floor(Math.random() * 10);
+    return [a, b];                                //grazina masyva su 2 reiksmemis
+}
+
+const res1 = giveMeTwoNumbers();
+console.log(res1, res1[0] + res1[1]);
+
+const res2 = giveMeTwoNumbers();
+console.log(res2, res2[0 + res2[1]]);
+
+const person = {
+    name: 'Ona',
+    age: 66,
+    isMarried: true,
+};
+const userName = person.name;
+const userAge = person.age;
+const userIsMarried = person.isMarried;
+
+const { age, name } = person;
+console.log(age);
+console.log(name);

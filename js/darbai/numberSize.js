@@ -1,6 +1,7 @@
+//skaiciaus pavertimas i teksta, gauni tekstinio pobudzio skaiciu t.y. to gauto dalyko ilgis
 function numberSize(n) {
     const nAsText = '' + n;     // '' + 2 = '2'
-    if (typeof n !== 'number') {
+    if (typeof n !== 'number') {          //1-as tikrinimas apsisaugoti nuo nesamoniu(ne skaiciu)    
         return 'Bolgas duomenu tipas.'
     }
 
@@ -11,12 +12,11 @@ function numberSize(n) {
     }
 
     let size = nAsText.length;
-
-    //desimtainis
+    //desimtainis, kai isimam kablelius
     if (n % 1 !== 0) {
         size--;
     }
-    //neigiamas
+    //neigiamas, kai isimam minusus
     if (n < 0) {
         size--;
     }

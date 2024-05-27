@@ -2,7 +2,7 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 */
 
-console.log('Number.isFinite()');
+console.log('Number.isFinite()');            //grazins true arba false, finite - baigtine reiksme
 console.log(Number.isFinite(152614));
 console.log(Number.isFinite(-152614));
 console.log(Number.isFinite(1526.14));
@@ -34,15 +34,15 @@ console.log(isNaN(-15.2614));
 console.log(isNaN(0));
 console.log(isNaN(Infinity));
 console.log(isNaN(-Infinity));
-console.log(isNaN(NaN));           // kaip si eilute if (nAsText ==='NaN)
+console.log(isNaN(NaN));           // tas pats kaip if (nAsText ==='NaN)
 
 console.log('-------------------');
 console.log('parseInt()');
 
 const a = '87';
 const b = parseInt('87');
-console.log(typeof a);
-console.log(typeof b);
+console.log(typeof a);                 // stringas
+console.log(typeof b);                 // number
 
 console.log(parseInt('87'));
 console.log(parseInt('-99'));
@@ -56,7 +56,7 @@ console.log(parseInt('Grybu karas'));
 console.log(parseInt(''));
 
 console.log('-------------------');
-console.log('parseFloat()');              //dazniau naudojamas nei parsint
+console.log('parseFloat()');              //dazniau naudojamas nei parseInt, nes atpazysta begalybes
 
 console.log(parseFloat('87'));
 console.log(parseFloat('-99'));
