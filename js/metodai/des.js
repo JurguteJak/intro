@@ -43,3 +43,27 @@ const userIsMarried = person.isMarried;
 const { age, name } = person;
 console.log(age);
 console.log(name);
+
+console.clear();
+
+//rest panaudojamas... funkcijose. jis dedamas paskutinis parametruose, pirma dedamos fiksuotos reiksmes
+//paduodi pavienes reiksmias ir jas surenka i masyva
+function drinks(...list) {
+    return `Gerimu kiekis: ${list.length}.`
+}
+console.log(drinks('a', 'b', 'c', 'd'));
+
+// jeigu nedesi ... (su ... paskutinio parametro) tai skaiciuos zodziu ilgius ir siuo atveju ziures antro paduodo zodzio ilgi
+function iLike(name, ...list) {
+    return `${name} megsta ${list.length} spalvas.`;
+}
+console.log(iLike('Jonas', 'red', 'blue'));
+console.log(iLike('Maryte', 'white', 'black', '50greys'));
+console.log(iLike('Petras'));
+
+// console.log(Math.max(10, 7));
+// console.log(Math.min(10, 7));
+
+const marks = [10, 2, 8, 4, 6];
+console.log(Math.max(...marks));
+console.log(Math.min(...marks));
