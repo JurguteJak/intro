@@ -1,19 +1,19 @@
 /*
-Destrukturizavimas 
-... rest operatorius
+Destrukturizavimas istraukia reiksmes (eiliskumas - is eiles)
+gimininga 'siela' spread
+... rest operatorius t.y. visi like
 */
 const a = [10, 2, 8, 4, 6];
 const first = a[0];
 const second = a[1];
-const rest = a.slice(2);
+const rest = a.slice(2);    //atpjauna nuo 2 indexo
 
 console.log(first);
 console.log(second);
 console.log(rest);             // likusios reiksmes, nes paemem pirma 2 reiksmes
 
 const dict = ['labas', 'rytas', 'Lietuva', 'sakau', 'tau']; //struktura
-const [word1, word2, ...restOfDict] = dict;                                       // destrukturizavimas. imama is eiles 1 2 3
-
+const [word1, word2, ...restOfDict] = dict;                       // destrukturizavimas. ...restOfDict surenka visas likusias reiksmes
 
 console.log(word1);                     // individualu istraukia
 console.log(word2);                     // individualu istraukia
@@ -29,22 +29,30 @@ const res1 = giveMeTwoNumbers();
 console.log(res1, res1[0] + res1[1]);
 
 const res2 = giveMeTwoNumbers();
-console.log(res2, res2[0 + res2[1]]);
+// const n1 = res2[0];
+// const n2 = res2[1];
+
+//tas 2 eilutes pakeiciam i:
+const [n1, n2] = res2;
+
+console.log(res2, n1 + n2);
+
+// sutrumpinimas:
+// const [n1, n2] = giveMeTwoNumbers();
+// console.log(n1 + n2);
 
 const person = {
     name: 'Ona',
     age: 66,
     isMarried: true,
 };
-const userName = person.name;
-const userAge = person.age;
-const userIsMarried = person.isMarried;
+// const userName = person.name;
+// const userAge = person.age;
+// const userIsMarried = person.isMarried;
 
-const { age, name } = person;
+const { age, name } = person;    //eiliskumas nera svarbus objektu
 console.log(age);
 console.log(name);
-
-console.clear();
 
 //rest panaudojamas... funkcijose. jis dedamas paskutinis parametruose, pirma dedamos fiksuotos reiksmes
 //paduodi pavienes reiksmias ir jas surenka i masyva

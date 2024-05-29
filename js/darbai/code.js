@@ -42,3 +42,4 @@ console.log(findAverage([1, 2, 3, 4]));
 //     return array.length ? array.reduce((a, b) => a + b) / array.length : 0;
 // }
 // console.log(find_average([1, 1, 1]));
+

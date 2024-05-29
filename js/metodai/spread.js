@@ -1,5 +1,5 @@
 /*
-Spread operatorius
+Spread operatorius (padeda perkopijuoti masyvus ir objektus, bei kopijuojant sukurti naujus juos ispleciant)
 Destruktorizavimas
 */
 
@@ -75,4 +75,21 @@ console.log(fullPersonDetails);       // viska istraukia
 console.log(fullPersonDetails.id);
 console.log(fullPersonDetails.name);  //istraukia tik varda
 
-//ar galima spreadinti is objekto i masyva ?
+const str = 'abc';
+const arr = ['a', 'b', 'c'];
+const obj = { 0: 'a', 1: 'b', 2: 'c' };
+
+console.log(str[0], arr[0], obj[0]);  // bus a a a
+// objekte ima indeksus kaip arejuj (ismeta nr.)
+
+
+const k = [1, 2, 3];
+const l = { name: 'Ona', age: 66 };
+
+//ar galima ispredinti is objekto i masyva ? ne
+// const o = [...k, ...l];
+// console.log(o);
+
+//ar galima ispredinti is masyvo i objektus ? taip
+const p = { ...k, ...l };
+console.log(p);
