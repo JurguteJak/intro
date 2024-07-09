@@ -334,10 +334,10 @@ function didziausiasSkaiciusSarase(count) {
         // } else if (typeof count == 'number') {
         //     console.log(didziausiasSkaiciusSarase(152));
 
-        // }
     }
+}
 
-    console.log(didziausiasSkaiciusSarase());
+console.log(didziausiasSkaiciusSarase());
 
 // console.log(didziausiasSkaiciusSarase([]));
 

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "default": "node --watch ./js/funkcijos/default.js",
+    "doing": "node --watch ./js/darbai/doing.js",
+    "new-methods": "node --watch ./js/metodai/new-methods.js",
     "method:array2": "node --watch ./js/metodai/array2.js",
     "for-other": "node --watch ./js/ciklai/for-other.js",
     "switch": "node --watch ./js/palyginimai/switch.js",

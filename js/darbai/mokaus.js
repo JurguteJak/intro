@@ -37,3 +37,31 @@ function biggestNumber(arr) {
 }
 biggestNumber(array);
 
+console.clear();
+
+//surask didziausia skaicių
+const A = [83, 55, 53, -73, 0, 8, 17, 76, 95, -1, 35, -16, -22, -94, 9, 54, 100];
+
+// function maxValue(arr) {
+//     let biggestNumber = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > biggestNumber) {
+//             biggestNumber += arr[i];
+//         }
+//     }
+//     return console.log(biggestNumber);
+// }
+
+// maxValue(A);
+
+function maxValue(arr) {
+    let smallestNumber = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < smallestNumber) {
+            biggestNumber += arr[i];
+        }
+    }
+    return console.log(smallestNumber);
+}
+
+maxValue(A);

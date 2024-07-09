@@ -107,7 +107,7 @@ console.log(Math.random());
 console.log(Math.random());
 
 console.log('\n Sing------------');
-console.log(Math.sign(5));                  //grazina 1, atai reiskia teigimas skaicius
+console.log(Math.sign(5));                  //grazina 1, tai reiskia teigimas skaicius
 console.log(Math.sign(-5));                 // grazina -1 tai reiskia skaicius neigiamas
 console.log(Math.sign(0));                  // 0 bus 0
 console.log(Math.sign(-0));                 // 0 yr nulis tai bus -0
