@@ -75,3 +75,17 @@ console.log(iLike('Petras'));
 const marks = [10, 2, 8, 4, 6];
 console.log(Math.max(...marks));
 console.log(Math.min(...marks));
+
+console.clear();
+
+const students = [
+    { name: 'Jonas', age: 99, isMarried: true },
+    { name: 'Maryte', age: 88 },
+    { name: 'Petras', age: 77 },
+    { name: 'Ona', age: 66 },
+];
+
+for (const { name, age, isMarried } of students) {
+    const str = `Mano vardas ${name} ir man ${age} metu (${isMarried ? '' : 'ne '}vedes).`;
+    console.log(str);
+}

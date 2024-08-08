@@ -115,3 +115,7 @@ console.log(colorTranslation('yellow'));
 
 // duomenu tipai tikriname su === !==, nes lyginant stringa '4' su number 4 palygins gerai
 // lyginant su == gausis nesamone
+
+for (let i = 1; i < 5; i++) {
+    console.log(i);
+}
